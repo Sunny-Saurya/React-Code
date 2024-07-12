@@ -7,7 +7,7 @@ function App() {
   const [color, setColor] = useState("Olive")
 
   return (
-    <div className=""style={{backgroundColor: color}}>
+    <div className="h-full w-full"style={{backgroundColor: color}}>
 
     
       <div>
@@ -20,13 +20,13 @@ function App() {
       </div>
       <div className=" bg-white text-white flex-flex gap-2">
         <button onClick={() => setColor("red")}>Red</button>
-        <button>Green</button>
-        <button>Blue</button>
-        <button>Pink</button>
-        <button>Brown</button>
-        <button>Yellow</button>
-        <button>Green</button>
-        <button>Orange</button>
+        <button onClick={() => setColor("green")}>Green</button>
+        <button onClick={() => setColor("blue")}>Blue</button>
+        <button onClick={() => setColor("pink")} >Pink</button>
+        <button onClick={() => setColor("brown")} >Brown</button>
+        <button onClick={() => setColor("yellow")} >Yellow</button>
+        <button onClick={() => setColor("purple")} >purple</button>
+        <button onClick={() => setColor("orange")} >Orange</button>
       </div>
     </div>
   )
