@@ -1,3 +1,12 @@
+// React hooks are functions that let you use state and other React features in functional components. Here's an overview of the most commonly used hooks with examples:
+// 1. useState
+
+// Purpose: Adds state to functional components.
+
+// Example:
+
+
+
 import {useState} from 'react';
 import React from 'react';
 

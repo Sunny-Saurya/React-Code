@@ -1,3 +1,10 @@
+// 2. useEffect
+
+// Purpose: Performs side effects in functional components (e.g., data fetching, subscriptions).
+
+// Example:
+
+
 import  {useState, useEffect} from 'react';
 import React from 'react';
 
