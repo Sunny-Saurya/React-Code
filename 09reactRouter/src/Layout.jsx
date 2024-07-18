@@ -7,7 +7,8 @@ function Layout() {
   return (
     <>
     <Header/>
-    <Outlet />
+    {/* for chnaging the middle part of the website */}
+    <Outlet /> 
     <Footer />
     </>
   )
