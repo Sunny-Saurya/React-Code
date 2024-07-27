@@ -1,3 +1,7 @@
+import React, { useState } from 'react';
+import Navigation from './Navbar/Navbar';
+import Footer from './Footer';
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -15,11 +19,14 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
+    // Form validation can be added here before proceeding
     console.log('Form submitted:', formData);
+    // Handle form submission logic here
   };
 
   return (
+    <div>
+      <Navigation />
     <div className="contact-us-container">
       <h2>Contact Us</h2>
       <form onSubmit={handleSubmit} className="contact-form">
@@ -57,6 +64,8 @@ const Contact = () => {
         </div>
         <button type="submit">Submit</button>
       </form>
+    </div>
+    <Footer/>
     </div>
   );
 };

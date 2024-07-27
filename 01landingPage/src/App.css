@@ -24,6 +24,7 @@ nav{
   margin:0  auto;
   height: 72px;
   align-items: center;
+
 }
 
 nav ul{
@@ -31,7 +32,11 @@ nav ul{
   list-style: none;
   gap: 24px;
   align-items: center;
-
+  
+}
+nav ul #yoyo{
+  text-decoration: none;
+  color: var(--gray);
 }
 
 button{
@@ -126,7 +131,10 @@ button{
 }
 
 .contact-us-container {
-  display: flex;
+  /* display: flex; */
+  
+ 
+
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -134,6 +142,10 @@ button{
 }
 
 .contact-form {
+  position: relative;
+  top: 5%;
+  left: 30%;
+  transform: translate(13%, 10%);
   width: 100%;
   max-width: 400px;
   padding: 2rem;
@@ -143,7 +155,9 @@ button{
 }
 
 .contact-form h2 {
+  font-size: 24px;
   text-align: center;
+  margin-left: 200px;
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
   font-weight: bold;
@@ -186,15 +200,22 @@ button{
 .contact-form button:hover {
   background-color: #0056b3;
 }
-
+.contact-us-container h2{
+  font-size: 24px;
+  text-align: center;
+  /* margin-left: 200px; */
+  /* margin-bottom: 1.5rem; */
+}
 /* Footer Styles */
 .footer-container {
+  margin-top: 500px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  max-width: 1200px;
+  /* max-width: 1280px; */
   margin: 0 auto;
   padding: 0 20px;
+  background-color: #2f2f30;
 }
 
 .footer-section {
@@ -233,4 +254,69 @@ button{
 
 .footer-bottom {
   margin-top: 20px;
+}
+
+.footer-section h4{
+  color: #fff;
+}
+
+.footer-section p{
+  color: #fff;
+}
+
+.footer-bottom p{
+  color: var(--red);
+  text-align: center;
+}
+
+#yoyo.active{
+  color: var(--red);
+}
+
+/* src/components/About.css */
+
+.about-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 1280px;
+  margin-top: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.about-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color:var(--red);
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+.about-card{
+  margin-bottom: 50px;
 }

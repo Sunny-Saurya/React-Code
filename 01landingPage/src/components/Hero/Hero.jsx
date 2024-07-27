@@ -1,4 +1,4 @@
-const heroSection = () =>{
+const HeroSection = () =>{
     return(
         <main className="hero">
             <div className="hero-content">
@@ -29,4 +29,4 @@ const heroSection = () =>{
     )
 }
 
-export default heroSection
+export default HeroSection
