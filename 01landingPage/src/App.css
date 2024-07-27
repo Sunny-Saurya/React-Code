@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --red: #d01c28;
+  --gray: #2e2e2e;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin:0  auto;
+  height: 72px;
+  align-items: center;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  gap: 24px;
+  align-items: center;
+
+}
+
+button{
+  all:unset;
+  padding: 6px 16px;
+  background:var(--red);
+  height: 32px;
+  color: white;
+  font-weight: 500;
+}
+
+.hero{
+  margin: 0 auto;
+  max-width: 1280px;
+  display: flex;
+  align-items: center;
+  height: calc(100vh-72px);
+  margin-top: 100px;
+}
+
+.hero h1{
+  font-weight: 800;
+  line-height: 102px;
+  font-size: 108px;
+}
+
+.hero p{
+  font-weight: 600;
+  color: var(--gray);
+  font-size: 20px;
+  max-width: 400px;
+}
+
+.hero-btn{
+  display: flex;
+  gap: 40px;
+}
+
+.secondary-btn{
+  background: transparent;
+  color: var(--gray);
+}
+
+.shopping p{
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
+.brand-icons{
+    display: flex;
+    gap: 16px;
+}
+
+.hero-content{
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+
+}
+.hero-btn button{
+  font-size: 24px;
+  padding: 16px 32px;
+}
+.hero-image img{
+  width: 700px;
+  height: 700px;
+  /* margin-bottom: 600px; */
+}
+
+@media (max-width: 900px){
+  .hero-image img{
+    width: 500px;
+    height: 500px;
+    }
+  .hero h1{
+    font-size: 24px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .hero-btn{
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .hero-btn button{
+      font-size: 18px;
+    }
+    body{
+      background: beige;
+    }
+}
+
+.contact-us-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.contact-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.contact-form .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contact-form .form-group textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Styles */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section .social-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a,
+.footer-section .social-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section .social-links a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+}
