@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const Navigation = () =>{
     return (
   
-    <div>
+    <div style={{position: "sticky", top:"0"}}>
       <nav>
         <div className="logo">
           <img src="/images/brand_logo.png" alt="logo" />
